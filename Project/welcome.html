@@ -1,0 +1,118 @@
+<html>
+<head>	
+	<title> My Project </title>
+	<style>
+	table
+	{
+	border-collapse:collapse;
+	}
+	</style> 
+
+	<script language="javascript">
+
+		function validate()
+		{
+			var x=document.forms["s1"]["sname"].value
+			var y=document.forms["s1"]["spass"].value	
+
+			if (x==null || x=="" || y==null || y=="")	
+			{
+				alert("please enter value in the textbox");
+				return false;
+			}	
+		}
+
+		function validate2()
+		{
+			var x=document.forms["s2"]["s2name"].value
+			var y=document.forms["s2"]["s2pass"].value
+			var z=document.forms["s2"]["s2mail"].value	
+
+			if (x==null || x=="" || y=null || y="" || z=null || z="")	
+			{
+				alert("please enter value in the textbox");
+				return false;
+			}	
+		}
+	</script>
+</head>
+<body bgcolor= "e7ffcf">
+	<h1>Welcome to my site</h1>
+	<table border="0" >
+	<tr>
+		<td align="top">
+			<center><b>SIGN IN<b></center>
+			<FORM NAME ="s1" onSubmit="return validate()" action ="next.html">
+			Username:<input type="text" name ="sname">
+			<br><br>
+			Password :<input type="password" name="spass">
+			<br>
+			<input type="submit" value = "Submit">
+		</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="center">OR</td>	
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+
+		<td>
+			<center><b>SIGN Up<b></center>
+			<FORM NAME ="s2" onSubmit="return validate2()" action = "next.html">
+			Username:<input type="text" name ="s2name">
+			<br><br>
+			Password :<input type="password" name="s2pass">
+			<br>	
+			e-mail
+			<br> address:<input type = "text" name ="s2mail">
+			<br><br>
+			<input type="submit" value = "Submit">
+		</td>
+	</tr>
+	</table>
+
+</body>
+</html>                                       
